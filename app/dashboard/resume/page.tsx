@@ -82,7 +82,7 @@ export default function Home() {
       label: "Setting",
       href: "/dashboard/setting",
       icon: (
-        <IconSettings className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+        <IconSettings className="text-neutral-700 dark:text-neutral-500 h-5 w-5 flex-shrink-0" />
       ),
     }
   
@@ -167,7 +167,7 @@ const Dashboard = () => {
 
   return (
     <div className="w-screen overflow-y-auto  ">
-      <div className="overflow-y-auto bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] grid grid-row-12 text-black dark:text-white  bg-white dark:bg-neutral-700  rounded-s-3xl">
+      <div className="overflow-y-auto bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] grid grid-row-12 text-black  bg-white dark:bg-neutral-700  rounded-s-3xl">
         <Component />
         </div>
     </div>
@@ -192,7 +192,6 @@ const router = useRouter()
   const steps = [
     { title: "Create New Resume", component: <DialogElement1 templateTheme={templateTheme} setTemplate={setTemplate} /> },
     { title: "Create New Resume", component: <ResumeCreationDialog setResumeName={setResumeName} /> },
-    // Add more steps as needed
   ];
 
   const session = useSession()
@@ -333,7 +332,7 @@ console.log(response)
 
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-gray-900 dark:text-gray-500 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -354,10 +353,9 @@ console.log(response)
           <div className="grid md:grid-cols-2 gap-8">
          
             <Card className="bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <CardHeader>
-
-                <CardTitle className="text-2xl font-semibold flex items-center">
-                  <SparklesIcon className="mr-2 h-6 w-6 text-yellow-400" />
+              <CardHeader className="dark:text-blue-800">
+                <CardTitle className="text-2xl font-semibold flex items-center text-gray-600">
+                  <SparklesIcon className="mr-2 h-6 w-6 text-yellow-400 dark:text-black" />
                   Create New Resume
                 </CardTitle>
               </CardHeader>
@@ -403,7 +401,7 @@ console.log(response)
             <Card className="bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardHeader>
 
-                <CardTitle className="text-2xl font-semibold flex items-center">
+                <CardTitle className="text-2xl font-semibold flex items-center text-gray-600">
                   <SparklesIcon className="mr-2 h-6 w-6 text-yellow-400" />
                   Create New Cover Letter
                 </CardTitle>
@@ -461,7 +459,7 @@ console.log(response)
             <TabsContent value="recent">
               <Card className="bg-white dark:bg-gray-800 shadow-lg">
                 <CardHeader>
-                  <CardTitle className="text-2xl font-semibold">Previous Resumes</CardTitle>
+                  <CardTitle className="text-2xl font-semibold text-gray-600">Previous Resumes</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ScrollArea className="h-[400px] pr-4">
@@ -478,7 +476,7 @@ console.log(response)
                             <FileTextIcon className="h-6 w-6 text-white" />
                           </div>
                           <div>
-                            <p className="text-lg font-medium text-gray-900 dark:text-gray-100">{resume.name}</p>
+                            <p className="text-lg font-medium text-gray-900 dark:text-gray-600">{resume.name}</p>
                             <p className="text-sm text-gray-500 dark:text-gray-400">Last edited {resume.lastEdited}</p>
                           </div>
                         </div>
@@ -518,7 +516,7 @@ console.log(response)
             <TabsContent value="all">
             <Card className="bg-white dark:bg-gray-800 shadow-lg">
                 <CardHeader>
-                  <CardTitle className="text-2xl font-semibold">Previous Resumes</CardTitle>
+                  <CardTitle className="text-2xl font-semibold text-gray-600">Previous Cover Letter</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ScrollArea className="h-[400px] pr-4">
@@ -535,7 +533,7 @@ console.log(response)
                             <FileTextIcon className="h-6 w-6 text-white" />
                           </div>
                           <div>
-                            <p className="text-lg font-medium text-gray-900 dark:text-gray-100">{resume.name}</p>
+                            <p className="text-lg font-medium text-gray-900 dark:text-gray-600">{resume.name}</p>
                             <p className="text-sm text-gray-500 dark:text-gray-400">Last edited {resume.lastEdited}</p>
                           </div>
                         </div>

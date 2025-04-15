@@ -280,11 +280,12 @@ export default function Home() {
             >
               <div className="flex items-center gap-2">
                 <User className="w-5 h-5 text-gray-500" />
-                <span className="text-lg font-medium">{name}</span>
+                <span className="text-lg font-medium text-gray-600">{name}</span>
               </div>
               <Button 
-                variant="ghost"
+                variant="default"
                 onClick={() => setEditingName(true)}
+                className="bg-black text-white"
               >
                 Edit
               </Button>
