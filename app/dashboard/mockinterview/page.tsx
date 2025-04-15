@@ -115,7 +115,7 @@ export default function Home() {
   return (
     <div
       className={cn(
-        "rounded-md flex flex-col md:flex-row bg-gray-100 dark:bg-neutral-800 w-full flex-1 max-w-7xl mx-auto border border-neutral-200 dark:border-neutral-700 overflow-hidden",
+        "rounded-md flex flex-col md:flex-row bg-gray-100 dark:bg-neutral-800 w-full flex-1 mx-auto border border-neutral-200 dark:border-neutral-700 overflow-hidden",
         "h-[100vh]" 
       )}
     >
@@ -386,7 +386,7 @@ Collaborative and innovative work environment.
     <div className="w-full space-y-8">
       <Alert className="bg-white dark:bg-gray-800 border-blue-200 dark:border-blue-800 shadow-lg">
         <Sparkles className="h-5 w-5 text-blue-500" />
-        <AlertTitle className="text-lg font-semibold">AI-Powered Interviews</AlertTitle>
+        <AlertTitle className="text-lg font-semibold text-green-700">AI-Powered Interviews</AlertTitle>
         <AlertDescription className="text-gray-600 dark:text-gray-300">
           Practice with our advanced AI to simulate real interview scenarios. Get instant feedback and improve your skills.
         </AlertDescription>

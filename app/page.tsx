@@ -39,7 +39,7 @@ export default function Component() {
       title: 'Interview Feedback',
       description:
         'Receive detailed feedback on your AI-generated mock interviews. Identify areas for improvement and refine your answers to impress future employers.',
-      icon: <Trophy/>, // Replace with appropriate icon
+      icon: <Trophy/>,
     },
   ];
   
@@ -175,7 +175,7 @@ export default function Component() {
       
     </div>
     <div className="text-center text-gray-400 mt-6">
-      <p>&copy; 2024 Ace Your Interview. All rights reserved.</p>
+      <p>&copy; 2025 Ace Your Interview. All rights reserved.</p>
     </div>
   </div>
     </footer>

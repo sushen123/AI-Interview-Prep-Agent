@@ -9,7 +9,7 @@ function DashboardLayout({children}: any)  {
 
     return (
      
-        <div className="h-screen">
+        <div className="h-screen w-screen">
           <ThemeProvider
             attribute="class"
             defaultTheme="system"

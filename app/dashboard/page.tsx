@@ -74,7 +74,7 @@ export default function Home() {
   return (
     <div
       className={cn(
-        "rounded-md flex flex-col md:flex-row bg-gray-100 dark:bg-neutral-800 w-full flex-1 max-w-7xl mx-auto border border-neutral-200 dark:border-neutral-700 overflow-hidden",
+        "rounded-md flex flex-col md:flex-row bg-gray-100 dark:bg-neutral-800 w-full flex-1 mx-auto border border-neutral-200 dark:border-neutral-700 overflow-hidden",
         "h-[100vh]" 
       )}
     >
@@ -183,7 +183,7 @@ const Dashboard = () => {
   }
 
   return (
-    <div className="w-screen">
+    <div className="w-screen h-screen">
       <div className="bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] grid grid-row-12 h-auto text-black dark:text-white bg-white dark:bg-neutral-700 rounded-s-3xl">
         <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 text-gray-800 dark:text-white">
           <div className="container mx-auto px-4 py-8">
